@@ -7,7 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #9E3B3B;
     padding: 20px;
 }
 
@@ -18,15 +18,43 @@ body {
 
 .head {
     text-align: center;
-    background: #ffffff;
+    background: #FFEAD3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    background: #FFEAD3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skills {
+    background: #FFEAD3;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    background: #ffffff;
+.education {
+    background: #FFEAD3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    background: #FFEAD3;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -59,8 +87,11 @@ a {
 
 table {
     border-collapse: collapse; 
-    width: 300px;
+    width: 650px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 th, td {
@@ -69,8 +100,8 @@ th, td {
 }
 
 th {
-    background-color: #0077cc;
-    color: white;
+    background-color: #EA7B7B;
+    color: black;
 }
 
 form {
@@ -82,17 +113,22 @@ form {
 input, textarea {
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    margin-bottom: -50px;
 }
 
 button {
     padding: 10px;
-    background-color: #0077cc;
-    color: white;
+    background-color: #EA7B7B;
+    color: black;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #9E3B3B;
+}
+
+.footer {
+    text-align: center;
 }
