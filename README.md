@@ -1,2 +1,0 @@
-# Justiniani
-Activity Repository
