@@ -128,3 +128,7 @@ button {
 button:hover {
     background-color: #9E3B3B;
 }
+
+.footer {
+    text-align: center;
+}
