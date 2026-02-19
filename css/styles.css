@@ -11,11 +11,6 @@ body {
     padding: 20px;
 }
 
-.dark-mode {
-    background-color: #222;
-    color: white;
-}
-
 .hidden {
     display: none;
 }
@@ -27,7 +22,7 @@ body {
 
 .head {
     text-align: center;
-    background: #FFEAD3;
+    background: rgb(240, 241, 235);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -38,7 +33,7 @@ body {
 }
 
 .about {
-    background: #FFEAD3;
+    background: rgb(240, 241, 235);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -47,7 +42,7 @@ body {
 }
 
 .skills {
-    background: #FFEAD3;
+    background: rgb(240, 241, 235);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -55,7 +50,7 @@ body {
 }
 
 .education {
-    background: #FFEAD3;
+    background: rgb(240, 241, 235);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -63,7 +58,7 @@ body {
 }
 
 .contact {
-    background: #FFEAD3;
+    background: rgb(240, 241, 235);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -109,13 +104,24 @@ th, td {
 }
 
 th {
-    background-color: #EA7B7B;
+    background-color: #f8f8f8;
     color: black;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form br {
+    display: none;
 }
 
 input, textarea {
@@ -126,14 +132,15 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: #EA7B7B;
+    background-color: lightgray;
     color: black;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 button:hover {
-    background-color: #9E3B3B;
+    background-color: darkgray;
 }
 
 .footer {
@@ -142,4 +149,22 @@ button:hover {
 
 .btn {
     border-radius: 8px;
+    background-color: rgb(240, 241, 235);
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .head,
+.dark-mode .about,
+.dark-mode .skills,
+.dark-mode .education,
+.dark-mode .contact,
+.dark-mode .btn,
+.dark-mode .button {
+    background-color: #222;
+    color: white;
+}
+
