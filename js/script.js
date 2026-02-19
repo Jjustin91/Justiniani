@@ -11,9 +11,9 @@ const themeToggle = document.getElementById("themeToggle");
 
 themeToggle.addEventListener("click",function(){
     if (document.body.classList.toggle("dark-mode")){
-        themeToggle.textContent = "Toggle Light Mode";
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>Light Mode';
     } else {
-        themeToggle.textContent = "Toggle Dark Mode";
+        themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>Dark Mode';
     }
 });
 
@@ -21,7 +21,13 @@ const toggleSkills = document.getElementById("toggleSkills");
 const skillSection = document.getElementById("skillSection");
 
 toggleSkills.addEventListener("click",function(){
-    skillSection.classList.toggle("hidden");
+    const isHidden = skillSection.classList.toggle("hidden");
+
+    if (isHidden){
+        toggleSkills.innerHTML = '<i class="fa-solid fa-eye"></i>Show Skills';
+    } else {
+        toggleSkills.innerHTML = '<i class="fa-solid fa-eye-slash"></i>Hide Skills';
+    }
 });
 
 submitBtn.addEventListener("click",function(event){
