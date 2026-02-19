@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Online CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
+        <button class="btn" id="themeToggle">Toggle Dark Mode</button>
         <section class="head">
             <h1>Jonathan T. Justiniani</h1>
             <p>IT Student | Web system and Technologies</p>
@@ -18,14 +19,15 @@
             <section class="about">
                 <h2>About Me</h2>
                 <p>Hi I'm Jonathan From IT2R3</p>
-                <img src="profile.jpg" alt="Profile photo" width="300" height="300">
+                <img src="/images/profile.jpg" alt="Profile photo" width="300" height="300">
                 <p>Email:
                     <a href="mailto:justinianijonathan91@gmail.com">justinianijonathan91@gmail.com</a><br>
                     Github:
                     <a href="https://github.com/Jjustin91/Justiniani.git" target="_blank">github.com/Jjustin91/Justiniani</a>
                 </p>
             </section>
-            <section class="skills">
+            <button class="btn" id="toggleSkills">Show/Hide Skills</button>
+            <section class="skills" id="skillSection">
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -76,10 +78,10 @@
             <section class="contact">
                 <h2>Contact Me</h2>
                 <form>
-                    <input type="text" placeholder="Name"><br><br>
-                    <input type="email" placeholder="Email"><br><br>
+                    <input type="text" id="name" placeholder="Name"><br><br>
+                    <input type="email" id="email" placeholder="Email"><br><br>
                     <textarea placeholder="Message"></textarea><br><br>
-                    <button type="submit">Send</button>
+                    <button type="submit" id="submitBtn">Send</button>
                 </form>
             </section>
         </div>
@@ -87,6 +89,9 @@
     <footer class="footer">
         <p>&copy; 2026 Jonathan T. Justiniani. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
