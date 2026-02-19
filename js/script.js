@@ -4,7 +4,6 @@ const submitBtn = document.getElementById("submitBtn")
 
 submitBtn.addEventListener("click",function(event){
     event.preventDefault();
-    alert("Thank you! Your message has been recieved");
 
 });
 
