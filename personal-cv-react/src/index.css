@@ -1,0 +1,195 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --card-border: #e9ecef;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.1);
+  --accent: #007bff;
+  --btn-bg: #e2e6ea;
+  --btn-hover: #dae0e5;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --card-bg: #1e1e1e;
+  --card-border: #2d2d2d;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.6);
+  --accent: #4da6ff;
+  --btn-bg: #333333;
+  --btn-hover: #444444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+#themeToggle {
+  margin-bottom: 15px;
+}
+
+.head, .about, .skills, .education, .contact {
+  background: var(--card-bg);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+  width: 100%;
+  transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.head:hover, .about:hover, .skills:hover, .education:hover, .contact:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.head, .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px 0;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-hover);
+}
+
+h1, h2, p {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  color: var(--accent);
+  transition: color 0.5s ease;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse; 
+  width: 100%;
+  margin: 15px 0;
+}
+
+th, td {
+  border: 1px solid var(--card-border); 
+  padding: 12px; 
+  text-align: left;
+  transition: border-color 0.5s ease;
+}
+
+th {
+  background-color: var(--btn-bg);
+  transition: background-color 0.5s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+form br {
+  display: none;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: inherit;
+  transition: border-color 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button, .btn {
+  padding: 12px 24px;
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.5s ease, transform 0.1s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--btn-hover);
+}
+
+button:active, .btn:active {
+  transform: scale(0.96);
+}
+
+button i, .btn i {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.7;
+}
