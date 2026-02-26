@@ -1,5 +1,3 @@
-import profilePhoto from 'src/assets/images/profile.jpg';
-
 function About() {
     return (
         <div className="container">
