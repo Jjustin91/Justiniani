@@ -9,19 +9,20 @@ function Contact() {
     return (
         <div className="container">
             <section className="contact">
-                <h2>Contact Me</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
-                    <br /><br />
-                    
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
-                    <br /><br />
-                    
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message"></textarea>
-                    <br /><br />
-                    
-                    <button type="submit" id="submitBtn">Send</button>
-                </form>
+                <Card title="Contact">
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
+                        <br /><br />
+                        
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+                        <br /><br />
+                        
+                        <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message"></textarea>
+                        <br /><br />
+                        
+                        <button type="submit" id="submitBtn">Send</button>
+                    </form>
+                </Card>
             </section>
         </div>
     );

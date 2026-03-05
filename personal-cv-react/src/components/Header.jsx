@@ -1,5 +1,3 @@
-import Card from './Card';
-
 function Header() {
     return (
         <header>

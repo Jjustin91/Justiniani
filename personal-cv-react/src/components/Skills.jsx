@@ -12,12 +12,13 @@ function Skills({ skills }) {
             </button>
             {visible && (
                 <section className="skills" id="skillSection">
-                    <h2>Skills</h2>
-                    <ul>
-                        {skills.map((skill, index) => (
-                            <li key={index}>{skill}</li>
-                        ))}
-                    </ul>
+                    <Card title="Skills">
+                        <ul>
+                            {skills.map((skill, index) => (
+                                <li key={index}>{skill}</li>
+                            ))}
+                        </ul>
+                    </Card>
                 </section>
             )}
         </div>
