@@ -15,22 +15,48 @@ function App() {
     }
   }, [darkMode]);
 
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+  ];
+
+  const education = [
+    {
+      year: "2028",
+      program: "BS Information Technology",
+      institution: "USTP - CDO Campus"
+    },
+    {
+      year: "2024",
+      program: "Senior Highschool",
+      institution: "Liceo De Cagayan"
+    },
+    {
+      year: "2022",
+      program: "Junior Highschool",
+      institution: "Cagayan De Oro National Highschool"
+    }
+  ];
+
   return (
     <div>
-      <button 
-        className='btn' 
+      <button
+        className='btn'
         id="themeToggle"
         onClick={() => setDarkMode(!darkMode)}
       >
         <i className={darkMode ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
-      
+
       <Header />
       <About />
-      <Skills />
-      <Education />
+      <Skills skills={skills} />
+      <Education education={education}/>
       <Contact />
+
     </div>
   );
 }
