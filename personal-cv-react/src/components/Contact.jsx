@@ -1,5 +1,6 @@
 import Card from './Card';
 import { useState } from "react";
+import ContactList from './Contactlist';
 
 function Contact() {
     const [name, setName] = useState("");
@@ -9,7 +10,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch("http://localhost/cv-api/process.php", {
+        fetch("http://localhost:8080/cv-api/process.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -63,6 +64,12 @@ function Contact() {
                         
                         <button type="submit" id="submitBtn">Send</button>
                     </form>
+                </Card>
+
+                <br />
+            
+                <Card>
+                    <ContactList />
                 </Card>
             </section>
         </div>

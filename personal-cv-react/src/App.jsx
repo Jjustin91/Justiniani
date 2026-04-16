@@ -4,6 +4,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import ContactList from './components/Contactlist';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
